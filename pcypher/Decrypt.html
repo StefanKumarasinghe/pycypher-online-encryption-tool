@@ -1,0 +1,148 @@
+<html>
+<head>
+<link rel="shortcut icon" href="fav.png">
+    <meta name="description" content="Decrypt your messages here">
+<script src="code.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="rollups/aes.js"></script>
+    <script>
+
+</script>
+<style>
+          /* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: gray;
+}
+
+textarea, input, div {
+  cursor:pointer;s
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>
+        Pcypher | Decryptor
+    </title>
+</head>
+<body class="
+" onload="typeWriter()">
+<ul class="nav nav-pills p-1">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Decrypt</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Encrypt.html">Encrypt</a>
+    </li>
+    <li class="nav-item dropdown dropright">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">More</a>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="home.html">Home</a>
+          <a class="dropdown-item" href="£">Controller</a>
+        </div>
+      </li>
+   
+  </ul>
+    <div>
+        <div class = "container-fluid h-25 pt-1" style="overflow-x:hidden; overflow-y:auto;"><h1 class=" align-middle display-3 text-center w-100"  >Decryptor</h1> <p class="text-center" id="opening-message"></p></div>
+
+       <form class="container pt-2">
+  <div class="row">
+    <div class=" col-sm-8">
+     <div class="form-group">
+
+  <textarea class="form-control " rows="18" id="inputbox" placeholder="Please enter the cipher text"></textarea>
+
+</div>
+    </div>
+    <div class="col-sm-4">
+
+
+
+<form >
+
+
+    <div class="form-group">
+     <input type="password" class="form-control" placeholder="Key" id="key">
+
+  </div>
+
+
+</form>
+      <a class="btn btn-primary mb-5 " id="encryptbtn" onclick ="decrypt();" >DECODE</a>
+
+
+</div>
+   <textarea class="form-control " onclick="copy('key')" data-toggle="popover"  data-content="Copied to Clipboard"  rows="18
+" id="outbox" style="display:none" placeholder=""></textarea>
+
+
+  </div>
+  </div>
+
+
+</form>
+<div class="text-center jumbotron jumbotron-fluid">
+    <p class="display-4">Pcypher can not save your love but we can hide it</p>
+    
+    <p>Also to:</p>
+    </div>
+    <div class="row text-center mx-auto  w-100">
+    
+    
+      <div class="col-sm-4 mx-auto">
+        <div class="card mx-auto m-2 p-4 text-center" style="width:20rem; height:12em;">
+          <div class="card-body">
+            <h4 class="card-title">Time Capsule</h4>
+            <p class="card-text">A message to yourself in the future, all you need is to store the cipher</p>
+            
+          </div>
+        </div>
+        </div>
+        <div class="col-sm-4 mx-auto">
+          <div class="card mx-auto m-2 p-4 text-center" style="width:20rem; height:16em;">
+            <div class="card-body">
+              <h4 class="card-title">Message to Someone</h4>
+              <p class="card-text"> Could be sent to someone else to be cracked in the distance future by handing the key later</p>
+              <a href="#" class="btn btn-primary stretched-link"></a>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-4 mx-auto">
+            <div class="card mx-auto m-2 p-4 text-center" style="width:20rem; height:12em;">
+              <div class="card-body">
+                <h4 class="card-title">Play the game</h4>
+                <p class="card-text">Try to guess the key by answering and receiving hints</p>
+                
+              </div>
+            </div>
+            </div>
+      </div>
+    </div>
+    <footer class="text-center p-5">
+      <div class="spinner-grow text-primary mx-auto"></div>
+    </footer>
+    </body>
+    </html>
